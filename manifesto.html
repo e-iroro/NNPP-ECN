@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <script src="https://kit.fontawesome.com/9a2f8c0987.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>NNPP | ECN 9th Cohort</title>
+</head>
+<body>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>DISCLAIMER</h2>
+        <p>
+            This website was solely created for the 9th cohort of the Electoral College's Politeracy course. We are in no way affiliated with the New Nigeria People's Party or any of their organisations. The logos and related pictures belong to their respective owners and NNPP(ECN) does not claim any right over them.
+        </p>
+    </div>
+    <header>
+        <a class="logo" href="/"><img class="nndp1" src="Images/SOURCE-FILE-LOGO-LATEST.png" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="#">Home</a>
+            <a href="#">Chairman's Welcome</a>
+            <a href="#about">About Us</a>
+            <a href="#our-models">Candidates</a>
+            <a href="#join">Join Us</a>
+        </div>
+    </div>
+    <section id="join">
+        <h1>Manifesto of the New Nigeria People's Party(NNPP)</h1>
+        <div id="body-join2">
+            <div class="join-text">
+                <h1>Office of the President of the Federal Republic of Nigeria</h1>
+                <img src="/Images/rsz_seal_of_the_president_of_nigeriasvg.png" alt="">
+                <img src="/Images/rsz_2source-file-logo-latest1.png" alt="">
+                <img src="/Images/rsz_seal_of_the_vice_president_of_nigeriasvg.png" alt="">
+                <h1>Coming soon</h1>
+            </div>
+        </div>
+    </section> 
+    <section id="join">
+        <div id="body-join1">
+            <div class="join-text">
+                <h1>Office of the Chairman of Eti-Osa Local Government</h1>
+                <img src="/Images/eti-osa-icon-1.png" alt="">
+                <img src="/Images/rsz_2source-file-logo-latest1.png" alt="">
+                <img src="/Images/rsz_download_1-removebg-preview.png" alt="">
+                <h1>
+                    Join Us
+                </h1>
+                <p>
+                    Do you want to join the winning party?
+                </p>
+                <button id="join-button1">
+                    Join Us Now
+                </button>
+            </div>
+        </div>
+    </section> 
+    <footer>
+        <div id="main-footer">
+            <a class="logo" href="/"><img class="nndp2" src="Images/SOURCE-FILE-LOGO-LATEST.png" alt="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#our-models">Candidates</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+            <div id="socials">
+                <ul>
+                    <li><a href="#"><i class='fab fa-linkedin-in'></i></a></li>
+                    <li><a href="#"><i class='fab fa-instagram'></i></a></li>
+                    <li><a href="#"><i class='fab fa-facebook-f'></i></a></li>
+                    <li><a href="#"><i class='fab fa-twitter'></i></a></li>
+                </ul>
+            </div>    
+        </div>
+        <hr>
+        <div id="copyright">
+            <p>© Copyright 2022 . All Rights Reserved</p>
+            <p>Designed by <a href="https://linktr.ee/a33sha">Aishat Dosunmu</a></p>
+            <p>Built by <a href="https://linktr.ee/eruiroro">Eruoghene Iroro</a></p>
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+
+
+        //For mobile menu
+
+        const doc = document;
+        const menuOpen = doc.querySelector(".menu");
+        const menuClose = doc.querySelector(".close");
+        const overlay = doc.querySelector(".overlay");
+
+        menuOpen.addEventListener("click", () => {
+        overlay.classList.add("overlay--active");
+        });
+
+        menuClose.addEventListener("click", () => {
+        overlay.classList.remove("overlay--active");
+        });
+
+
+        //For disclaimer
+        window.addEventListener("load", function(){
+            setTimeout(
+                function open(event){
+                    document.querySelector(".popup").style.display = "block";
+                },
+                1000
+            )
+        });
+
+
+        document.querySelector("#close").addEventListener("click", function(){
+            document.querySelector(".popup").style.display = "none";
+        });
+    </script>
+</body>
+</html>
