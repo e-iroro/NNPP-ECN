@@ -199,6 +199,8 @@ a{
       right: 35px;
     }
 
+    
+
 
   }
   
@@ -210,6 +212,8 @@ a{
     .menu {
       display: initial;
     }
+
+    
   }
 
   @media (max-width: 600px){
@@ -219,9 +223,11 @@ a{
     } 
     
     .chairman{
-      min-width:  310px;
+      max-width:  350px;
     }
-
+    .manifest{
+      text-align: justify;
+    }
 
     #main-footer li {
       display: flex;
@@ -513,10 +519,11 @@ img {
 }
 /*****************************JOIN US*********************************/
 
-#join{
+#join, #join1{
     padding: 50px;
     align-content: center;
 }
+
 #body-join{
     background-color: #029342;
     border-radius: 25px;
@@ -532,6 +539,8 @@ img {
     min-height: 00px;
     padding-top: 30px;
     padding-bottom: 70px;
+    width: 100%;
+    
 }
 
 #body-join2{
