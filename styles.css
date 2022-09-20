@@ -186,6 +186,7 @@ a{
     cursor: pointer;
   }
 
+
   /*************************MEDIA QUERIES**********************/
   
   @media screen and (max-height: 450px) {
@@ -197,6 +198,7 @@ a{
       top: 15px;
       right: 35px;
     }
+
 
   }
   
@@ -214,7 +216,11 @@ a{
     .nndp{
       height: 200px;
       padding-left: 70px;
-    }    
+    } 
+    
+    .chairman{
+      min-width:  310px;
+    }
 
 
     #main-footer li {
@@ -257,9 +263,6 @@ a{
 
 }
 
-p{
-    color: #3C1642;
-}
 
 #welcome{
     background-color: #FFFFFF;
@@ -376,7 +379,16 @@ h1{
 }
 
 
-.textbox, figcaption  {
+.textbox {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  text-align: center;
+  color: #014b21;
+  padding: 40px;
+} 
+figcaption  {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 450;
@@ -489,6 +501,8 @@ img {
 #chairman-img{
   margin-bottom: -30px;
 }
+
+
 
 .chairman-text{
   background-color: #FFFFFF;
@@ -643,3 +657,9 @@ footer{
 
 
 
+
+
+.manifest{
+  text-align: justify;
+  padding: 46px;
+}
