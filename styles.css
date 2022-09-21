@@ -449,6 +449,7 @@ figcaption  {
 }
 #about{
   background-color: white;
+  padding-bottom: 30px;
 
 }
 .offerings p{
@@ -484,6 +485,11 @@ img {
   margin: auto;
   text-align: left;
   padding: 10px;
+}
+.sen{
+  height: 900px;
+  text-align: justify;
+  line-height: 50px;
 }
 
 .card:hover {
