@@ -332,7 +332,7 @@ h1{
     color: white;
 }
 .welcome{
-    width: 650px;
+    width: 600px;
     padding: 55px;
     align-self: center;
     animation: slideInFromLeft 1s ease-in;
